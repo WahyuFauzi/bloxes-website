@@ -3,7 +3,7 @@ import Layout from '../../components/Layout.jsx';
 
 export default function BuySpace() {
 	const [size, setSize] = useState(20);
-	const [cost, setCost] = useState(280);
+	const [cost, setCost] = useState(0.2);
 	const [renderCond, setRenderCond] = useState(false);
 	const [renderClass, setRenderClass] = useState('hidden');
 	const [symbolCond, setSymbolCond] = useState('🔽');
@@ -49,7 +49,7 @@ export default function BuySpace() {
 		<>
 			<Layout>
 				<div role="price-calculator" className="h-screen flex mt-4">
-					<div className="w-36 mx-auto flex justify-between">
+					<div className="w-64 mx-auto flex justify-between">
 						<div>
 							<button
 								onClick={() => {

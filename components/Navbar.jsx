@@ -19,7 +19,7 @@ export default function Navbar() {
 					</li>
 					<li className="h-full">
 						<div
-							className="w-24 pt-2.5 h-full cursor-pointer text-center text-white hover:bg-accent2"
+							className="w-24 pt-2.5 h-full cursor-pointer text-center text-white transition ease-in-out delay-150 hover:bg-accent2"
 							onClick={(e) => {
 								e.preventDefault();
 								router.push('/download');
