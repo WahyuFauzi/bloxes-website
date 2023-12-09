@@ -1,9 +1,22 @@
-function NavigationBar() {
+import React from 'react';
+import { Link } from 'react-router-dom';
+
+function NavBar() {
 	return (
-		<>
-			<div>this is navbar</div>
-		</>
-	);
+    <nav className='navbar bg-primary'>
+      <ul>
+        <li>
+          <Link to='/'>Home</Link>
+        </li>
+        <li>
+          <Link to='/about'>Download</Link>
+        </li>
+        <li>
+          <Link to='/about'>Pricing</Link>
+        </li>
+      </ul>
+    </nav>
+  );
 }
 
 export default NavigationBar;
